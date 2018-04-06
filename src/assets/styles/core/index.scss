@@ -1,0 +1,9 @@
+@import "html-overrides";
+@import "fonts";
+@import "icons";
+
+@mixin app-core() {
+  @include html-overrides();
+  @include generate-icons();
+}
+

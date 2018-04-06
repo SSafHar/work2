@@ -1,0 +1,11 @@
+<div appPageSliderParent [fragment]="selectedFragment" (fragmentChange)="select($event)" class="scroll-content">
+  <app-page-slider [banners]="banners"></app-page-slider>
+
+  <app-home [appPageSliderFragment]="'home'"></app-home>
+  <app-biography [appPageSliderFragment]="'biography'"></app-biography>
+  <app-master-class [appPageSliderFragment]="'master-class'"></app-master-class>
+  <app-events [appPageSliderFragment]="'events'"></app-events>
+  <app-media [appPageSliderFragment]="'media'"></app-media>
+  <app-contact [appPageSliderFragment]="'contact'"></app-contact>
+  <app-footer></app-footer>
+</div>

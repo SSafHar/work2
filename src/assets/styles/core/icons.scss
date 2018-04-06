@@ -1,0 +1,101 @@
+//
+@font-face {
+  font-family: "icons";
+  font-weight: normal;
+  font-style: normal;
+  // sass-lint:disable indentation
+  src: url("/assets/fonts/icon-fonts/icons.woff2") format("woff2"),
+    url("/assets/fonts/icon-fonts/icons.woff") format("woff"),
+    url("/assets/fonts/icon-fonts/icons.ttf") format("truetype");
+  // sass-lint:enable indentation
+}
+
+%icon {
+  display: inline-block;
+  font-family: "icons";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  vertical-align: middle;
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+@mixin generate-icons() {
+  .icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+
+    &::before {
+      @extend %icon;
+    }
+  }
+
+  $icon-list: (
+    add: "\EA01",
+    arrow-down: "\EA02",
+    avatar-uploader: "\EA03",
+    background-uploader: "\EA04",
+    books: "\EA05",
+    brain: "\EA06",
+    bulb: "\EA07",
+    calendar: "\EA08",
+    class-avarage: "\EA09",
+    clock: "\EA0A",
+    close: "\EA0B",
+    completed: "\EA0C",
+    course: "\EA0D",
+    coursestore: "\EA0E",
+    dash: "\EA0F",
+    down: "\EA10",
+    download: "\EA11",
+    drive: "\EA12",
+    edit: "\EA13",
+    error: "\EA14",
+    expand: "\EA15",
+    facebook: "\EA16",
+    failed: "\EA17",
+    github: "\EA18",
+    github1: "\EA19",
+    grade: "\EA1A",
+    home: "\EA1B",
+    info: "\EA1C",
+    left: "\EA1D",
+    linkedin: "\EA1E",
+    locked: "\EA1F",
+    logo: "\EA20",
+    mailbox: "\EA21",
+    menu: "\EA22",
+    pending: "\EA23",
+    return: "\EA24",
+    right: "\EA25",
+    search: "\EA26",
+    settings: "\EA27",
+    skills: "\EA28",
+    success: "\EA29",
+    syllabus: "\EA2A",
+    title: "\EA2B",
+    twitter: "\EA2C",
+    unlocked: "\EA2D",
+    up: "\EA2E",
+    video: "\EA2F",
+    view: "\EA30",
+    warning: "\EA31",
+    weight: "\EA32",
+    );
+
+  @each $name, $glyph-code in $icon-list {
+    .icon-#{$name} {
+      &::before {
+        content: $glyph-code;
+      }
+    }
+  }
+}

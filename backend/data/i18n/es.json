@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Տուն",
+      "media": "Մեդիա",
+      "masterClass": "Մաստեռ կլասս",
+      "events": "Զիբիլ",
+      "biography": "Կենսագրություն",
+      "contactUs": "Կապնվեք Մեզ Հետ",
+      "languageENG": "Անգ",
+      "languageESP": "Հայ"
+    }
+  },
+  "home": {
+    "name": "Խուան Պառդո",
+    "text": "Կիրք, ուժ և սեր"
+  },
+  "media": {
+    "banner": "Մեդիա",
+    "info": "Ռշտունի իշխանը իր զորքով ընկնում է գերեվարիչների ետևից: Վահանը և Մերուժանը ամրանում են Վանում, երբ նրանց վրա հարձակվում է Ռշտունին: Վահանը Համազասպուհու եղբայրն է և նրան առաջարկում է զրադաշտություն ընդունել:",
+    "view": "Դիտել ավելին"
+  },
+  "masterClass": {
+    "banner": "Մաստեռ կլասս",
+    "text": {
+      "info": "Ռշտունի իշխանը իր զորքով ընկնում է գերեվարիչների ետևից: Վահանը և Մերուժանը ամրանում են Վանում, երբ նրանց վրա հարձակվում է Ռշտունին: Վահանը Համազասպուհու եղբայրն է և նրան առաջարկում է զրադաշտություն ընդունել:",
+      "description": "Ստանում է մերժում: Երբ Ռշտունու զինվորները մտնում են Վան, Վահանը հրամայում է սպանել Համազասպուհուն:",
+      "listingText": "Ստանում է մերժում:",
+      "list": {
+        "item1": "առաջի կետ",
+        "item2": "երրկորդ կետ",
+        "item3": "երրերդ կետ"
+      },
+      "quote": {
+        "message": "ԱՅՆ ՍՈՒՐԸ, ՈՐ ՍՊԱՆԵՑ ԴԱՎԱՃԱՆ ՀՈՐԸ, ԿՍՊԱՆԻ ՆԱԵՎ...",
+        "author": "Ուստա Սամվել"
+      }
+    }
+  },
+  "events": {
+    "banner": "Իրադարձություններ",
+    "text": "Հանրապետությունով մեկ զուգահեռաբար տարածվում է, թե Րաֆֆի Հովհաննիսյանը «հակառուս» է, եթե գա իշխանության, Հայաստան-Ռուսաստան հարաբերությունները վատանալու են..."
+  },
+  "biography": {
+    "banner": "Կենսագրություն",
+    "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "contact": {
+    "banner": "Կապնվեք մեզ հետ",
+    "title": "Բարև աշխարհ",
+    "info": "Հայտարարություն, որ դրա թիկունքում կանգնած են ներքին քաղաքական ուժեր:",
+    "text1": "Բալ բալ բլաբլաբլա բլաբլա բլաբլա",
+    "text2": "Բալ բալ բլաբլաբլա բլաբլա բլաբլա",
+    "italy": {
+      "name": "Իտալիա",
+      "phone": "+(10)1000100000"
+    },
+    "armenia": {
+      "name": "Հայաստան",
+      "phone": "+(10)1000100000"
+    },
+    "spain": {
+      "name": "Իսպանիա",
+      "phone": "+(10)1000100000"
+    },
+    "us": {
+      "name": "Միացյալ նահանգներ",
+      "phone": "+(10)1000100000"
+    }
+  }
+
+}

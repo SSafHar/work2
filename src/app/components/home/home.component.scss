@@ -1,0 +1,38 @@
+:host {
+  position: relative;
+  display: block;
+}
+
+app-image-slider {
+  height: calc(100vmin - 72px);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media(max-width: 768px) {
+    height: calc(100vh - 72px);
+  }
+}
+
+.text {
+  font-weight: 600;
+
+  &:first-child {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,39 @@
+:host {
+  height: 166px;
+  position: relative;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  background: rgba(black, 0.4);
+  height: 100%;
+  width: 295px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .material-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 4px;
+    padding: 2px;
+    background: rgba(lightgrey, 0.5);
+    border-radius: 3px;
+  }
+}

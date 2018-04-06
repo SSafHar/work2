@@ -1,0 +1,21 @@
+@mixin material-overrides() {
+  .mat-dialog-container {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .cdk-overlay-dark-backdrop {
+    background: white !important;
+    &::after {
+      content: "\EA0B";
+      font-family: "icons";
+      position: absolute;
+      right: 0;
+      margin: 8px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}

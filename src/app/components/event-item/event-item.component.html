@@ -1,0 +1,39 @@
+<div class="event" (click)="toggleOpened()">
+  <div class="date">
+    <h1 class="day">{{startDate.day}}</h1>
+    <p class="month">{{startDate.month}}</p>
+  </div>
+  <div class="main-info" [class.open]="opened">
+    <h2 class="name">{{event.name.text}}</h2>
+    <a *ngIf="opened" target="_blank"
+       (click)="$event.stopPropagation()"
+       [href]="event.url">View on EventBrite</a>
+    <div class="wrapper">
+      <i class="material-icons">access_time</i>
+      <p class="hours">{{startDate.hour}}-{{endDate.hour}}</p>
+      <i class="material-icons">place</i>
+      <p>{{venue.address.address_1}}, {{venue.address.city}} {{venue.address.country}}</p></div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="images" appBgImage [urls]="event.logo.url"></div>
+  <div class="details">
+    <i class="material-icons">dashboard</i>
+    <h4>Event Details</h4>
+    <p class="description">{{event.description.text}}</p>
+  </div>
+  <div class="info">
+    <div class="time">
+      <i class="material-icons">access_time</i>
+      <h4 class="label">Time</h4>
+      <p class="hours">({{startDate.weekDay}}) {{startDate.hour}}-{{endDate.hour}}</p>
+    </div>
+    <div class="location">
+      <i class="material-icons">place</i>
+      <h4 class="label">Location</h4>
+      <p class="place">{{venue.address.address_1}}, {{venue.address.city}} {{venue.address.country}}</p>
+    </div>
+  </div>
+  <app-map class="map" [coordinates]="coordinates"></app-map>
+</div>

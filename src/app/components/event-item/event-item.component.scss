@@ -1,0 +1,118 @@
+:host {
+  display: block;
+  background: ghostwhite;
+  color: grey;
+  border-left: 4px solid;
+  border-right: 2px solid lightgray;
+  cursor: pointer;
+  border-top: 2px solid lightgray;
+  outline: none;
+  overflow: hidden;
+
+  &:last-child {
+    border-bottom: 2px solid lightgray;
+  }
+}
+
+h1, h2, h4, h6, p {
+  margin: 0;
+}
+
+.month {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.month, .day {
+  color: rgba(grey, 0.8);
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+
+  .main-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 32px;
+    text-align: left;
+
+    .name {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .hours {
+      margin-right: 8px;
+    }
+
+    &.open {
+      .material-icons, p {
+        display: none;
+      }
+    }
+  }
+}
+
+.images, .map {
+  width: 100%;
+  height: 250px;
+}
+
+.map {
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  border-bottom: 2px solid darkgray;
+
+  .description {
+    width: 100%;
+    padding: 8px 24px;
+  }
+}
+
+.info {
+  display: flex;
+  margin-bottom: 0;
+
+  .time, .location {
+    width: 50%;
+    padding: 16px;
+
+    .label {
+      display: inline-block;
+    }
+
+    .hours, .place {
+      width: 100%;
+      margin-top: 4px;
+    }
+  }
+
+  .location {
+    border-left: 2px solid darkgray;
+  }
+}
+
+.material-icons {
+  font-size: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.wrapper {
+  display: flex;
+}
+
+a {
+  font-size: 12px;
+  color: #567793;
+  text-decoration: underline;
+}

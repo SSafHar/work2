@@ -1,0 +1,9 @@
+@import "../../../assets/styles/theme/light";
+
+:host {
+  display: block;
+  min-height: calc(100% - 72px);
+  padding: 0 40px 40px;
+  background: $gray-light;
+  overflow: hidden;
+}

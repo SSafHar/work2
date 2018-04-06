@@ -1,0 +1,64 @@
+<div class="container">
+  <h1 class="header">{{'contact.banner' | translate}}</h1>
+  <div class="content">
+    <div class="image-container">
+      <div class="image" appBgImage [urls]="images.bgImageUrl"></div>
+    </div>
+    <div class="info-text">
+      <h3 class="title">{{'contact.title' | translate}}</h3>
+      <p class="info">{{'contact.info' | translate}}</p>
+      <p class="text">{{'contact.text1' | translate}}</p>
+      <p class="text">{{'contact.text2' | translate}}</p>
+    </div>
+  </div>
+  <div class="countries">
+    <div class="items">
+      <div class="contain">
+        <div class="name">
+          <div appBgImage [urls]="images.italyImage" class="country-image"></div>
+          <h4>{{'contact.italy.name' | translate}}</h4>
+        </div>
+        <div class="phone">
+          <i class="material-icons">phone</i>
+          <span>{{'contact.italy.phone' | translate}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="contain">
+        <div class="name">
+          <div appBgImage [urls]="images.armImage" class="country-image"></div>
+          <h4>{{'contact.armenia.name' | translate}}</h4>
+        </div>
+        <div class="phone">
+          <i class="material-icons">phone</i>
+          <span>{{'contact.armenia.phone' | translate}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="contain">
+        <div class="name">
+          <div appBgImage [urls]="images.spainImage" class="country-image"></div>
+          <h4>{{'contact.spain.name' | translate}}</h4>
+        </div>
+        <div class="phone">
+          <i class="material-icons">phone</i>
+          <span>{{'contact.spain.phone' | translate}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="contain">
+        <div class="name">
+          <div appBgImage [urls]="images.usImage" class="country-image"></div>
+          <h4>{{'contact.us.name' | translate}}</h4>
+        </div>
+        <div class="phone">
+          <i class="material-icons">phone</i>
+          <span>{{'contact.us.phone' | translate}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

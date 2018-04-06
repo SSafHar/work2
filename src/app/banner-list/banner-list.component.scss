@@ -1,0 +1,17 @@
+:host {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+
+
+  @media(max-width: 786px) {
+    app-page-slider {
+      display: none;
+    }
+  }
+}
+
+.scroll-content {
+  flex: 1;
+  overflow-y: auto;
+}

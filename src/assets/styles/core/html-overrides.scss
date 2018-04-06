@@ -1,0 +1,46 @@
+@import "fonts";
+
+@mixin html-overrides() {
+  h1, h2, h3, h4, h5, h6, p, a, span, label {
+    margin: 0;
+    font-family: $font-lato;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  h6 {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}

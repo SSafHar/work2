@@ -1,0 +1,8 @@
+<a *ngFor="let banner of banners"
+   class="item"
+   (click)="select(banner.fragment)"
+   routerLink="/"
+   [fragment]="banner.fragment"
+   [class.active]="selectedFragment === banner.fragment">
+  <span class="text">{{banner.nameKey | translate}}</span>
+</a>

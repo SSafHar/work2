@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span class="icon-container">
+    <i class="material-icons mobile-icon" (click)="toggleNav()">queue_music</i>
+    <i class="material-icons web-icon">music_note</i>
+  </span>
+  <span class="spacer"></span>
+  <nav mat-tab-nav-bar [class.opened]="navOpened">
+    <a mat-tab-link *ngFor="let banner of banners"
+       routerLink="/" [fragment]="banner.fragment"
+       (click)="select(banner.fragment)"
+       class="item"
+       [class.active]="banner.fragment === selectedFragment">
+      {{banner.nameKey | translate}}
+    </a>
+  </nav>
+  <a class="item language">
+    <span (click)="chooseEnglish()" [class.selected]="selectedLanguage === 'en'">{{'navbar.links.languageENG' | translate}}</span>/
+    <span (click)="chooseSpanish()" [class.selected]="selectedLanguage === 'es'">{{'navbar.links.languageESP' | translate}}</span>
+  </a>
+</mat-toolbar>

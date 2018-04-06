@@ -1,0 +1,9 @@
+<div class="container">
+<h1 class="header">{{'events.banner' | translate}}</h1>
+<h4 class="info">{{'events.text' | translate}}</h4>
+  <app-event-item *ngFor="let event of events"
+                  [event]="event"
+                  [@open]="eventItem.opened ? 'opened' : 'closed'"
+                  #eventItem >
+  </app-event-item>
+</div>

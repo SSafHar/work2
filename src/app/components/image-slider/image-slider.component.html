@@ -1,0 +1,13 @@
+<div *ngFor="let image of images"
+     [@slide]="image.animationState"
+     (@slide.done)="setNextStates($event)"
+     appBgImage [urls]="image.url"
+     class="slider-image">
+</div>
+<div class="container">
+  <div class="dot"
+       *ngFor="let image of images; index as index"
+       (click)="selectImages(index)"
+       [class.selected]="currentInd === index">
+  </div>
+</div>

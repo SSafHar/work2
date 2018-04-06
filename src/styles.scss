@@ -1,0 +1,27 @@
+@import "~@angular/material/theming";
+@import "assets/styles/theme/light";
+@import "assets/styles/core/index";
+@import "assets/styles/overrides/material-overrides";
+
+@include app-core();
+@include mat-core();
+@include material-overrides();
+
+$app-theme: mat-dark-theme($app-primary, $app-accent, $app-warn);
+
+@include angular-material-theme($app-theme);
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "lato", sans-serif;
+}
+
+.header {
+  text-transform: uppercase;
+}
+

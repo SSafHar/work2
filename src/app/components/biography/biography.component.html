@@ -1,0 +1,13 @@
+<div class="biography" appBgImage [urls]="data.imageUrl">
+  <div class="container">
+    <h1 class="header">{{'biography.banner' | translate}}</h1>
+    <div class="content">
+      <div class="info">
+        <div class="info-left">{{'biography.text1' | translate}}</div>
+        <img [src]="data.image">
+        <div class="info-right">{{'biography.text2' | translate}}</div>
+      </div>
+    </div>
+    <a mat-raised-button href="/data/docs/pdf-sample.pdf" target="_blank">Download CV</a>
+  </div>
+</div>
